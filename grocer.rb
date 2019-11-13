@@ -76,9 +76,6 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  puts cart
-  puts coupons
-  
   # Consult README for inputs and outputs
   #
   # This method should call
@@ -88,4 +85,7 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
+  clean_cart = consolidate_cart(cart)
+  cleaner_cart = apply_coupons(clean_cart, coupons)
+  cleanest_cart = 
 end
