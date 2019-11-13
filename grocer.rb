@@ -89,12 +89,12 @@ def checkout(cart, coupons)
   i = 0 
   final_price = 0
   while i < cleaner_cart.length do
-    p i
-    p cleaner_cart[i]
     items_price = cleaner_cart[i][:price] * cleaner_cart[i][:count]  
     final_price += items_price
-    puts "the accumulated price is #{final_price}"
     i += 1
   end
+  if final_price > 100
+    final_price = final_price * 0.9
+    
   return final_price
 end
