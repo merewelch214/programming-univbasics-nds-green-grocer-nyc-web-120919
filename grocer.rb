@@ -92,4 +92,6 @@ def checkout(cart, coupons)
   puts "this is cleaner cart: #{cleaner_cart}"
   cleanest_cart = apply_clearance(cart)
   puts "this is cleanerst cart: #{cleaner_cart}"
+  
+  
 end
