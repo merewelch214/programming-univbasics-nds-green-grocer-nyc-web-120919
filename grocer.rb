@@ -35,9 +35,9 @@ def apply_coupons(cart, coupons)
   i = 0
   j = 0
   while i < cart.length do
-   
+    puts i
     while j < coupons.length do 
-      
+      puts j
       if cart[i][:item] == coupons[j][:item] # check if item in cart has coupon, if it does proceed
         cost_per_item = coupons[j][:cost] / coupons[j][:num] # calc how much each item costs using a coupon
         puts cart[i][:item]
