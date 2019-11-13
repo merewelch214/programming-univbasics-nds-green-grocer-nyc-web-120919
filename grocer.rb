@@ -61,6 +61,7 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
+  puts cart
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
