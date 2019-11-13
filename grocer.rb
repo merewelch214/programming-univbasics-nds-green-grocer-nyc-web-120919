@@ -42,7 +42,7 @@ def apply_coupons(cart, coupons)
         cost_per_item = coupons[j][:cost] / coupons[j][:num] # calc how much each item costs using a coupon
         if cart[i][:count] >= coupons[j][:num] # if there is a coupon, compare the count in cart with coupon num. 
           num_applications = cart[i][:count] / coupons[i][:num]
-          round.num_applications
+          round.num_applications(0)
           if num_applications >= 1
             num_disc_items = num_applications * coupons[j][:num]
             count_after_coupons = cart[i][:count] - num_disc_items
