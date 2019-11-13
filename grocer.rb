@@ -86,12 +86,12 @@ def checkout(cart, coupons)
   clean_cart = consolidate_cart(cart)
   cleaner_cart = apply_coupons(clean_cart, coupons)
   cleanest_cart = apply_clearance(cleaner_cart)
-  # i = 0 
-  # final_price = 0
-  # while i < cleaner_cart.length do
-  #   items_price = cleaner_cart[i][:price] * cleaner_cart[i][:count]  
-  #   final_price += items_price
-  #   i += 1
-  # end
-  # return final_price
+  i = 0 
+  final_price = 0
+  while i < cleaner_cart.length do
+    items_price = cleaner_cart[i][:price] * cleaner_cart[i][:count]  
+    final_price += items_price
+    i += 1
+  end
+  return final_price
 end
