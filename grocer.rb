@@ -40,6 +40,7 @@ def apply_coupons(cart, coupons)
       
       if cart[i][:item] == coupons[j][:item] # check if item in cart has coupon, if it does proceed
         cost_per_item = coupons[j][:cost] / coupons[j][:num] # calc how much each item costs using a coupon
+        puts cart[i][:item]
         if cart[i][:count] >= coupons[j][:num] # if there is a coupon, compare the count in cart with coupon num. 
             count_after_coupons = cart[i][:count] - (coupons[j][:num]) # get the new count for the existing item
             cart[i][:count] = count_after_coupons  #update existing item count
