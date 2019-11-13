@@ -93,6 +93,6 @@ def checkout(cart, coupons)
   cleanest_cart = apply_clearance(cart)
   puts "this is cleanest cart: #{cleanest_cart}"
   i = 0 
-  while i < cleanest_cart.length
+  while i < cleanest_cart.length do
   
 end
