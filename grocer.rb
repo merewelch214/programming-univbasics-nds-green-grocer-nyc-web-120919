@@ -94,7 +94,7 @@ def checkout(cart, coupons)
   puts "this is cleanest cart: #{cleanest_cart}"
   i = 0 
   final_price = 0
-  while i < cleanest_cart.length do
+  while i < cleaner_cart.length do
     items_price = cleanest_cart[i][:price] * cleanest_cart[i][:count]  
     final_price += items_price
     i += 1
