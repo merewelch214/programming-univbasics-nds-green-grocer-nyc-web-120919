@@ -85,8 +85,11 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
+  puts "starting with this cart: #{cart}"
   clean_cart = consolidate_cart(cart)
+  puts "this is clean cart: #{clean_cart}"
   cleaner_cart = apply_coupons(clean_cart, coupons)
+  puts "this is cleaner cart: #{cleaner_cart}"
   cleanest_cart = apply_clearance(cart)
-  
+  puts "this is cleanerst cart: #{cleaner_cart}"
 end
