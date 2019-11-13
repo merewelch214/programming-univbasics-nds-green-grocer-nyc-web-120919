@@ -54,10 +54,10 @@ def apply_coupons(cart, coupons)
         end  
       end
       j += 1
+      cost_per_item = 0
+      count_per_coupon = 0
     end
     i += 1
-    cost_per_item = 0
-    count_per_coupon = 0
   end
   return cart
 end
