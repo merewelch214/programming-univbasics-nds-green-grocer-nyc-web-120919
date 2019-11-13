@@ -93,6 +93,11 @@ def checkout(cart, coupons)
   cleanest_cart = apply_clearance(cart)
   puts "this is cleanest cart: #{cleanest_cart}"
   i = 0 
+  final_price = 0
   while i < cleanest_cart.length do
-  
+    items_price = cleanest_cart[i][:price] * cleanest_cart[i][:count]  
+  i += 1
+  final_price += items_price
+  end
+  return final_price
 end
