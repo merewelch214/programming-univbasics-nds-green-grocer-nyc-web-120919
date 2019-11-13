@@ -58,6 +58,7 @@ def apply_coupons(cart, coupons)
       count_per_coupon = 0
     end
     i += 1
+    j = 0
   end
   return cart
 end
