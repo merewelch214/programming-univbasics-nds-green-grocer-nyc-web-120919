@@ -71,7 +71,7 @@ def apply_clearance(cart)
     end  
     i += 1
   end
-  puts cart
+  p cart
   return cart
 end
 
