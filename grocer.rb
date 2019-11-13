@@ -62,8 +62,11 @@ end
 
 def apply_clearance(cart)
   p cart
-  # i = 0 
-  # while i < cart.length do
+  i = 0 
+  while i < cart.length do
+    puts i
+    i+= 1
+  end
   #   if cart[i][:clearance] == true
   #     discounted_price = cart[i][:price] * .8
   #     discounted_price.round(2)
