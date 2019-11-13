@@ -43,7 +43,6 @@ def apply_coupons(cart, coupons)
         if cart[i][:count] >= coupons[j][:num] # if there is a coupon, compare the count in cart with coupon num. 
           num_applications = cart[i][:count] / coupons[i][:num]
           if num_applications > 1
-            puts num_applications
             num_disc_items = num_applications * coupons[j][:num]
             puts num_disc_items
             count_after_coupons = cart[i][:count] - num_disc_items
