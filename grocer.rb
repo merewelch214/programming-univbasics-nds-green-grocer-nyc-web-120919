@@ -45,7 +45,7 @@ def apply_coupons(cart, coupons)
           if num_applications > 1
             puts num_applications
             num_disc_items = num_applications * coupons[j][:num]
-            puts num_disc_item
+            puts num_disc_items
             count_after_coupons = cart[i][:count] - num_disc_items
             cart[i][:count] = count_after_coupons
             item_name = cart[i][:item]
