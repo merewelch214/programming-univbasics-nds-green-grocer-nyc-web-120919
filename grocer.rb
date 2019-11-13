@@ -35,7 +35,7 @@ def apply_coupons(cart, coupons)
   i = 0
   j = 0
   while i < cart.length do
-    puts i
+    puts "currently on cart item number #{i}"
     while j < coupons.length do 
       puts j
       if cart[i][:item] == coupons[j][:item] # check if item in cart has coupon, if it does proceed
