@@ -61,7 +61,6 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-  p cart
   i = 0 
   while i < cart.length do
     if cart[i][:clearance] == true
