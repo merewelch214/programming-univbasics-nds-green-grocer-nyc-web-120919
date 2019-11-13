@@ -72,7 +72,7 @@ def apply_clearance(cart)
     end  
     i += 1
   end
-  return cart
+  puts cart
 end
 
 def checkout(cart, coupons)
@@ -85,16 +85,16 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-  clean_cart = consolidate_cart(cart)
-  cleaner_cart = apply_coupons(clean_cart, coupons)
-  cleanest_cart = apply_clearance(cart)
-  puts "this is cleanest cart: #{cleanest_cart}"
-  i = 0 
-  final_price = 0
-  while i < cleaner_cart.length do
-    items_price = cleaner_cart[i][:price] * cleaner_cart[i][:count]  
-    final_price += items_price
-    i += 1
-  end
-  return final_price
+  # clean_cart = consolidate_cart(cart)
+  # cleaner_cart = apply_coupons(clean_cart, coupons)
+  # cleanest_cart = apply_clearance(cart)
+  # puts "this is cleanest cart: #{cleanest_cart}"
+  # i = 0 
+  # final_price = 0
+  # while i < cleaner_cart.length do
+  #   items_price = cleaner_cart[i][:price] * cleaner_cart[i][:count]  
+  #   final_price += items_price
+  #   i += 1
+  # end
+  # return final_price
 end
